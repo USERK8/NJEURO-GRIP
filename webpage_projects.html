@@ -13,6 +13,7 @@
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
             color: #eeeeee;
+            text-align: center; /* Centers text globally */
         }
 
         @keyframes gradientBG {
@@ -23,6 +24,17 @@
 
         h1, h2 {
             color: #c3a6ff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 30px;
         }
 
         a {
@@ -68,16 +80,21 @@
         }
 
         p {
-            font-size: 17px;
-            line-height: 1.6;
+            font-size: 19px; /* Made text bigger */
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto; /* Keeps paragraphs centered */
         }
 
         ul {
             padding-left: 20px;
+            text-align: left; /* Lists still look clean */
+            display: inline-block; /* Center the list block */
         }
 
         li {
             margin-bottom: 10px;
+            font-size: 18px;
         }
     </style>
 </head>
